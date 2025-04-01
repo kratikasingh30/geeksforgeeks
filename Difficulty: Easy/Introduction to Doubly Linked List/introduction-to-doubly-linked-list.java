@@ -54,10 +54,14 @@ class GFG {
             Solution obj = new Solution();
             Node ans = obj.constructDLL(arr);
             printList(ans);
-        }
+        
+System.out.println("~");
+}
     }
 }
 // } Driver Code Ends
+
+
 
 
 
