@@ -62,23 +62,21 @@ System.out.println("~");
 // } Driver Code Ends
 
 
-
-
-
-
 // User function Template for Java
 
 class Solution {
     Node constructDLL(int arr[]) {
         // Code here
-        Node head = new Node(arr[0]); //first element head 
+        Node head = new Node(arr[0]);
         Node pre = head;
-        for(int i =1; i<arr.length; i++){
-            Node temp = new Node(arr[i]);
+        for(int i=1;i<arr.length;i++){
+            Node temp = new Node (arr[i]);
+            pre.next=temp;
             temp.prev=pre;
-            pre.next = temp;
-            pre = temp;
+            pre=temp;
             
-        }return head;
+        }
+        
+    return head;
     }
 }
